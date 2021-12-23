@@ -12,6 +12,3 @@ export const ActionTypes = {
   REMOVE_SELECTED_USER: 'REMOVE_SELECTED_USER',
 };
 
-export const Jacktrial = {
-  SET_JACK: 'SET_JACK',
-};

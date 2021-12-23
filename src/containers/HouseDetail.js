@@ -8,10 +8,10 @@ import {
 } from '../redux/actions/houseActions';
 
 const HouseDetail = () => {
-  const house = useSelector((state) => state.house);
+  const house = useSelector((state) => state.house.houseDetail);
   console.log(house);
   const {
-    house_description: houseDescription, house_name: houseName,
+    id, house_description: houseDescription, house_name: houseName,
   } = house;
   const { houseId } = useParams();
   const dispatch = useDispatch();
@@ -21,7 +21,7 @@ const HouseDetail = () => {
       .catch((err) => {
         console.log('Err ', err);
       });
-
+    console.log(response.data);
     dispatch(selectedHouse(response.data));
   };
 
@@ -35,23 +35,21 @@ const HouseDetail = () => {
   return (
     <div>
       {
-                Object.keys(house).length === 0 ? (
-                  <div> ...loading </div>
-                ) : (
+                Object.keys(house).length === 0 ? (<div> ...loading </div>) : (
 
-                  <div className="ui placeholder segment">
-                    <div className="column lp">
+                  <div className="jack">
+                    <div className="hey">
                       {/* <img className="ui fluid image" src={image} alt="api data call" /> */}
                     </div>
                     <div className="column rp">
                       {/* <img src={image} alt='image' /> */}
+                      <h1>{id}</h1>
                       <h1>{houseName}</h1>
                       <h3>{houseDescription}</h3>
                     </div>
                   </div>
                 )
 }
-      ;
     </div>
   );
 };

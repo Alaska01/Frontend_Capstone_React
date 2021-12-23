@@ -15,7 +15,7 @@ const HouseComponent = () => {
               {/* <div className="image"> <img src={image} alt={title}/> </div> */}
               <div className="content">
                 <div className="header">{houseName}</div>
-                <div className="meta price">{houseDescription}</div>
+                {/* <div className="meta price">{houseDescription}</div> */}
                 {/* <div className="meta" >{category}</div> */}
               </div>
             </div>
