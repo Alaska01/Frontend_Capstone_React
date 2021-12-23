@@ -1,13 +1,22 @@
-import User from './Users'
-import House from './Houses'
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HouseDetail from './containers/HouseDetail';
+import HouseListing from './containers/HouseListing';
+import Header from './containers/Header';
+// import ProductListing from './containers/ProductListing';
 
 function App() {
   return (
     <div className="App">
-      <div>Testing Backend API</div>
-      <User/>
-      <House />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" exact element={<HouseListing />} />
+          {/* <Route exact path="/" element={<ProductListing />} /> */}
+          <Route exact path="/houses/:houseId" element={<HouseDetail />} />
+          <Route>404 Not Found!</Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

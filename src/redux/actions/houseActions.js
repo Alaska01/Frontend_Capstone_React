@@ -1,21 +1,15 @@
-import { ActionTypes } from '../constants/action-types';    
+import { ActionTypes } from '../constants/action-types';
 
-export const setHouses = (houses) => {
-    return {
-        type: ActionTypes.SET_HOUSES,
-        payload: products,
-    };
-};
+export const setHouses = (houses) => ({
+  type: ActionTypes.SET_HOUSES,
+  payload: houses,
+});
 
-export const selectedHouse = (house) => {
-    return {
-        type: ActionTypes.SELECTED_HOUSE,
-        payload: product,
-    };
-};
+export const selectedHouse = (house) => ({
+  type: ActionTypes.SELECTED_HOUSE,
+  payload: house,
+});
 
-export const removeSelectedHouse = () => {
-    return {
-        type: ActionTypes.REMOVE_SELECTED_HOUSE,
-    };
-};
+export const removeSelectedHouse = () => ({
+  type: ActionTypes.REMOVE_SELECTED_HOUSE,
+});
