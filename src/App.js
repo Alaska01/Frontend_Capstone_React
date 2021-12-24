@@ -11,11 +11,12 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Login />
+        {/* <Login /> */}
         <Routes>
           <Route path="/" exact element={<HouseListing />} />
           {/* <Route exact path="/" element={<ProductListing />} /> */}
           <Route exact path="/houses/:houseId" element={<HouseDetail />} />
+          <Route exact path="/houses/Login" element={<Login />} />
           <Route>404 Not Found!</Route>
         </Routes>
       </Router>
