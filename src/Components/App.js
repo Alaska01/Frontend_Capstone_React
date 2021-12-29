@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Footer from './Footer';
 import NavBar from './NavBar'
 import '../Styles/App.css';
@@ -17,6 +17,7 @@ import Home from './Home';
 
 function App() {
   const dispatch = useDispatch();
+  const auth = useSelector((state) => state.authenticate);
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('token'));
@@ -42,7 +43,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
-          <Route path="/favourites" element={<Favourites />} />
+          <Route path="/favourites" element={auth.status && <Favourites />} />
           <Route path="/houses/:id" element={<HouseDetails />} />
           <Route exact path="About" element={<About />} />
           <Route path="*" element={<Error />} />
