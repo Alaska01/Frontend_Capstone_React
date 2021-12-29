@@ -5,7 +5,7 @@ const Footer = () => (
     <footer className=" text-white text-center">
       <div className="footer-link">
         <Link to="/home" className="logo text-center">
-          Find House
+          Find Administrative House
         </Link>
         © 2021 Copyright
       </div>

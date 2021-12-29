@@ -9,6 +9,7 @@ const Favourites = () => {
   const favHouse = useSelector((state) => state.favourites.favourite);
   const auth = useSelector((state) => state.authenticate);
   const dispatch = useDispatch();
+  
   const removeHandler = async (id) => {
     const url = `http://localhost:3001/api/v1/favourites/${id}`;
 
