@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Footer from './Footer';
-import NavBar from './NavBar'
+import NavBar from './NavBar';
 import '../Styles/App.css';
 import authenticate from '../Redux/Actions/authenticate';
 import HouseList from '../Containers/HouseList';

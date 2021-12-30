@@ -23,7 +23,8 @@ const Home = () => (
       <div className="aside">
         <p>All stats at your finger tips any day any time</p>
         <p>
-          You will have full control of all administrative and influential figures in the world, Make out time to write or visit this people.
+          You will have full control of all administrative and
+          influential figures in the world, Make out time to write or visit this people.
         </p>
         <Link to="/houses" className="btn-link">
           <button type="button" className="learn-more">

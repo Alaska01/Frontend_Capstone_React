@@ -9,7 +9,7 @@ const Favourites = () => {
   const favHouse = useSelector((state) => state.favourites.favourite);
   const auth = useSelector((state) => state.authenticate);
   const dispatch = useDispatch();
-  
+
   const removeHandler = async (id) => {
     const url = `http://localhost:3001/api/v1/favourites/${id}`;
 
@@ -33,7 +33,7 @@ const Favourites = () => {
         <div className="hotelList push">
           {favHouse.map((favourite) => {
             const {
-              id, house_name, images, house_description
+              id, house_name, images, house_description,
             } = favourite;
             return (
               <div key={id} className="hotel">

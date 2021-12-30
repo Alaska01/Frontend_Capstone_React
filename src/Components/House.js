@@ -8,7 +8,8 @@ import '../Styles/house.css';
 const House = (props) => {
   const dispatch = useDispatch();
   const {
-    id, house_name, images, house_description
+    /* eslint-disable camelcase */
+    id, house_name, images, house_description,
   } = props;
   const favHouse = useSelector((state) => state.favourites.favourite);
 
@@ -75,7 +76,6 @@ const House = (props) => {
 
 House.propTypes = {
   id: PropTypes.number.isRequired,
-  // price: PropTypes.string.isRequired,
   house_name: PropTypes.string.isRequired,
   images: PropTypes.string.isRequired,
   house_description: PropTypes.string.isRequired,

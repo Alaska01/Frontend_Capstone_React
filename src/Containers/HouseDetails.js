@@ -33,7 +33,7 @@ const HouseDetails = () => {
     );
   }
   const {
-    house_name, house_description, images
+    house_name, house_description, images,
   } = details;
   return (
     <div className="container">

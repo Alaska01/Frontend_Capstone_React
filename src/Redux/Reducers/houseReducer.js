@@ -1,5 +1,3 @@
-
-  
 import actionTypes from '../Constants/actionTypes';
 
 const initialState = {

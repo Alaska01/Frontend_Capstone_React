@@ -14,7 +14,7 @@ describe('House component tests', () => {
     <Provider store={store}>
       <Router>
         <House
-          id = {1}
+          id={1}
           house_name="Aso Rock Abuja"
           house_description="Sit of Power"
           images="https://i.vimeocdn.com/video/1123408936-b7516ea04851535c75a7a15c0b82619097ff710a9cd3e3f33f60f7ca707ce1cc-d?mw=1100&mh=2200&q=70"
