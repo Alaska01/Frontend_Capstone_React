@@ -36,7 +36,7 @@ To run this project locally, make sure you have done the following:
 
 ```
 
-on your terminal.
+on your terminal..
 
 ### Setup, Installations and usage
 
