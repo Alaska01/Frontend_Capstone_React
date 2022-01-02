@@ -5,7 +5,7 @@ import { fetchFavourites } from '../Redux/Actions/Favourites';
 const FetchFav = () => {
   const auth = useSelector((state) => state.authenticate);
   const dispatch = useDispatch();
-  const url = 'http://localhost:3001/api/v1/favourites';
+  const url = 'https://ayecapstonebackend.herokuapp.com/api/v1/favourites';
 
   const fetchhandler = () => {
     axios

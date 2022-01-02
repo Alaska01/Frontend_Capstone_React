@@ -17,7 +17,7 @@ const House = (props) => {
 
   const auth = useSelector((state) => state.authenticate);
   const addFavouriteHandler = async () => {
-    const url = 'http://localhost:3001/api/v1/favourites';
+    const url = 'https://ayecapstonebackend.herokuapp.com/api/v1/favourites';
     await axios.post(
       url,
 

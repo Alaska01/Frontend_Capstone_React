@@ -13,7 +13,8 @@ const HouseDetails = () => {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   const { id } = useParams();
-  const url = `http://localhost:3001//api/v1/houses/${id}`;
+  // const url = `http://localhost:3001//api/v1/houses/${id}`;
+  const url = `https://ayecapstonebackend.herokuapp.com/api/v1/houses/${id}`;
 
   const fetchDetails = async () => {
     const response = await axios.get(url, { mode: 'cors' });

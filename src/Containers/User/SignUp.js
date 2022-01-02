@@ -25,7 +25,7 @@ const SignUp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const url = 'http://localhost:3001/api/v1/signup';
+    const url = 'https://ayecapstonebackend.herokuapp.com/api/v1/signup';
     axios
       .post(url, { user: person })
       .then((response) => {

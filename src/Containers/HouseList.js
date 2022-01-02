@@ -12,7 +12,7 @@ const HouseList = () => {
   const houses = useSelector((state) => state.house.houses);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
-  const url = 'http://localhost:3001/api/v1/houses';
+  const url = 'https://ayecapstonebackend.herokuapp.com/api/v1/houses';
   const myFetch = async () => {
     const response = await axios.get(url, { mode: 'cors' });
     dispatch(allHouses(response.data));

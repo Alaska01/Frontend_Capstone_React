@@ -11,7 +11,7 @@ const Favourites = () => {
   const dispatch = useDispatch();
 
   const removeHandler = async (id) => {
-    const url = `http://localhost:3001/api/v1/favourites/${id}`;
+    const url = `https://ayecapstonebackend.herokuapp.com/api/v1/favourites/${id}`;
 
     await axios.delete(
       url,
