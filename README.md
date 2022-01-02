@@ -32,7 +32,7 @@ To run this project locally, make sure you have done the following:
 - Get a copy of the project by running
 
 ```
- git clone git@github.com:Alaska01/Backend_Capstone_RoR.git
+ git clone git@github.com:Alaska01/Frontend_Capstone_React.git
 
 ```
 
@@ -51,6 +51,11 @@ on your terminal..
 ## Live version
 
 ### [Live Version](https://ayecapstonefrotend.netlify.app/)
+
+- The above live link can be tested by either signing up  and logging in or using the following test data below to login
+- User 1: username: test1 password: password
+- User 2: username: test2 password: password
+- User 3: username: test3 password: password
 
 ## Back-end
 ### [Backend Link](https://github.com/Alaska01/Backend_Capstone_RoR/tree/backend)
