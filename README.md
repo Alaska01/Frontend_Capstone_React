@@ -1,6 +1,6 @@
  #              LOCATE ADMINISTRATIVE HOUSES APP
 
-> FThe find your administrative house App is a FullStack app built with ReactJs for the frontend and Ruby On Rails for the backEnd. When you first visit the app, you will see the homepage from where you can visit either visit the list of various government administratives houses list, Login or Sign up.
+> The find your administrative house App is a FullStack app built with ReactJs for the frontend and Ruby On Rails for the backEnd. When you first visit the app, you will see the homepage from where you can visit either visit the list of various government administratives houses list, Login or Sign up.
  On the House list page, a user can add some administrative houses to his favorite, by clicking the add to favorites button.
 > NB: The add to the favorite button is only visible to logged-in users.
 
