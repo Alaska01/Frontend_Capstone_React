@@ -32,7 +32,7 @@ To run this project locally, make sure you have done the following:
 - Get a copy of the project by running
 
 ```
- git clone git@github.com:Nasa28/Find-Your-Hotel-React.git
+ git clone git@github.com:Alaska01/Backend_Capstone_RoR.git
 
 ```
 
