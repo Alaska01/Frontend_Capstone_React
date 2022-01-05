@@ -1,0 +1,109 @@
+.bg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/bg.jpeg') 100% 100% / cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg button {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(255, 75, 4);
+  margin: 50px 0;
+  border-radius: 30px;
+  padding: 12px 30px;
+  transition: all ease-in 0.3s;
+}
+
+.bg button:hover {
+  background-color: white;
+  color: rgb(255, 75, 4);
+}
+
+.btn-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.bg-infor {
+  display: block;
+  text-align: center;
+  color: rgb(228, 221, 221);
+}
+
+.home-header {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.hotel-img {
+  height: 250px;
+  width: 80%;
+  border: 8px solid rgb(255, 75, 4);
+}
+
+.body-info {
+  margin: 0 100px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin-bottom: 50px;
+  column-gap: 20px;
+}
+
+.learn-more {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(255, 75, 4);
+  margin: 50px 0;
+  border-radius: 30px;
+  padding: 12px 30px;
+  transition: all ease-in 0.3s;
+}
+
+.learn-more:hover {
+  background-color: white;
+  color: rgb(255, 75, 4);
+}
+
+.aside {
+  line-height: 32px;
+}
+
+.aside p:first-child {
+  font-size: 30px;
+}
+
+.home-header p:first-child {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.home-header p:last-child {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+.footer-link {
+  font-size: 24px;
+  padding-top: 15px;
+}
+
+.logo {
+  color: rgb(255, 75, 4);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.logo:hover {
+  color: rgb(255, 75, 4);
+  text-decoration: none;
+  font-weight: bolder;
+}

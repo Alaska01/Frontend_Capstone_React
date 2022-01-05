@@ -1,0 +1,18 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+  background-color: rgb(116, 106, 99);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+}
+
+.login {
+  margin: 0 auto;
+}

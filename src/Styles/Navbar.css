@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  position: static;
+  align-items: center;
+  height: 70px;
+}
+
+.d-flex {
+  margin-right: 5px;
+}
+
+.ml-4 {
+  text-decoration: none;
+  color: rgb(104, 99, 99);
+  font-size: 18px;
+  font-weight: bold;
+}
